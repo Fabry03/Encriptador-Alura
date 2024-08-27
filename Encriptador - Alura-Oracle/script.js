@@ -16,13 +16,11 @@ function encriptar() {
     }
 
     const textoEncriptado = input
-        .replace(/a/g, "obo")
-        .replace(/e/g, "nen")
-        .replace(/i/g, "geo")
+        .replace(/e/g, "enter")
+        .replace(/i/g, "imes")
+        .replace(/a/g, "ai")
         .replace(/o/g, "ober")
-        .replace(/u/g, "flai")
-        .replace(/b/g,"tai")
-        .replace(/p/g, "mon");
+        .replace(/u/g, "ufat");
 
     document.getElementById('output-text').value = textoEncriptado;
     errorMessage.textContent = ''; 
@@ -40,13 +38,11 @@ function desencriptar() {
     }
 
     const textoDesencriptado = input
-        .replace(/obo/g, "a")
-        .replace(/nen/g, "e")
-        .replace(/geo/g, "i")
+        .replace(/enter/g, "e")
+        .replace(/imes/g, "i")
+        .replace(/ai/g, "a")
         .replace(/ober/g, "o")
-        .replace(/flai/g, "u")
-        .replace(/tai/g, "b")
-        .replace(/mon/g, "p");
+        .replace(/ufat/g, "u");
 
     document.getElementById('output-text').value = textoDesencriptado;
     errorMessage.textContent = '';
